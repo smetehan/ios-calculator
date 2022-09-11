@@ -32,3 +32,17 @@
 # =>performOperation değişkeninde clickObj fonksiyonu kullanılarak girilen operatörler ile switch case yöntemi kullanılarak işlemler yaptırıldı.
 # =>for döngüleri içerisinde click ile rakamlar ve işlem seçildi.
 # => onclick fonksiyonu kullanılarak AC tuşu ile ekranı silme, <= tuşu ile en son rakamı silme ve "." tuşu ile rakamlar arasına nokta koyma işlevi ayarlandı.
+
+
+***NOT*** JS de kullanılan eval fonksiyonu için:
+Javascript eval fonksiyonu ile string gelen verileri bir javascript değişkeni gibi tanımlayıp işlem sağlatılabilmektedir.
+
+Kullanımı : eval(deger)
+
+Eval fonksiyonu içerisinde en basitinden string değerde bir toplama işlemi sağlamamız durumunda bu toplama işleminin sonucu bize verecektir. 
+
+var deger = "11+4";
+console.log("eval fonksiyonu kullanmadan deger değişkenimiz");
+console.log(deger); => 11+4 çıktısı
+console.log("eval fonksiyonu kullandıktan sonra deger değişkenimiz");
+console.log(eval(deger)); => 15 çıktısı
