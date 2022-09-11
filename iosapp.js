@@ -80,9 +80,10 @@ let performOperation = (clickObj) => {
 
       break;
 
-    case "=":
+      case "=":
       evalStringArray.push(displayVal);
       let evalutaion = eval(evalStringArray.join(""));
+      evalutaion = evalutaion.toFixed(6);
       displayVal = evalutaion + "";
       displayValElement.innerText = displayVal;
       evalStringArray = [];
